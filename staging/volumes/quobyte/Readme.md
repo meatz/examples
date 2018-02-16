@@ -22,7 +22,7 @@ The example assumes that you already have a running Kubernetes cluster and you a
 - Quobyte client (1.3+) installed on the Kubernetes nodes more information how you can install Quobyte on your Kubernetes nodes, can be found in the [documentation](https://support.quobyte.com) of Quobyte.
 - To get access to Quobyte and the documentation please [contact us](http://www.quobyte.com/get-quobyte)
 - Already created Quobyte Volume
-- Added the line `allow-usermapping-in-volumename` in `/etc/quobyte/client.cfg` to allow the fixed user mounts
+- Make sure the mount.quobyte is started with the `--allow-usermapping-in-volumename` option. The currently provided [deployment examples](https://github.com/quobyte/kubernetes/blob/master/deploy/client-ds.yaml) provide this option already.
 
 ### Fixed user Mounts
 
